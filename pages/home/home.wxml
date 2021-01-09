@@ -1,0 +1,56 @@
+<!-- pages/home/home.wxml -->
+<wxs module="util" src="../../wxs/index.wxs" />
+<view class="home">
+    <view class="home-banner">
+        <image src="{{themeA.entrance_img}}" />
+    </view>
+    <view class="swiper-wrapper">
+        <swiper class="swiper-list" circular indicator-dots indicator-active-color="#157658" autoplay>
+            <swiper-item class="swiper-item" wx:for="{{bannerB.items}}" wx:key="unqiue">
+                <image src="{{item.img}}" />
+            </swiper-item>
+        </swiper>
+    </view>
+    <view class="grid-wrapper">
+        <m-category-grid datas="{{gridC}}" />
+    </view>
+    <view class="coupon-banner">
+        <image src="{{activityD.entrance_img}}" />
+    </view>
+    <view class="week_news">
+        <view class="top-wrapper">
+            <image src="{{themeE.title_img}}" />
+        </view>
+        <scroll-view scroll-x>
+            <view class="list-wrapper">
+                <view class="item" wx:for="{{themeESpuList}}" wx:key="unique">
+                    <image src="{{item.img}}" />
+                    <text class="title">{{item.title.length>=8 ? util.filter(item.title,0,7)+'...' : item.title}}</text>
+                    <text class="price">￥{{util.price(item.price,item.discount_price)}}</text>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="handpick">
+        <image  src="{{themeF.entrance_img}}" />
+    </view>
+    <view class="hot-wrapper">
+        <view class="top">
+            <image src="{{bannerG.img}}" />
+        </view>
+        <m-picture-grid list="{{bannerG.items}}">
+        </m-picture-grid>
+    </view>
+    <view class="fashion-wrapper">
+        <image src="{{themeH.entrance_img}}" />
+    </view>
+    <view class="recommend-wrapper">
+        <view class="top">
+            <image src="/assets/recommend.png" />
+        </view>
+        <m-water-flow data="{{waterFlow}}"/>
+        <view wx:if="{{!moreData}}" class="tip">
+            <text >~~~~没有更多数据了~~~~</text>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,35 @@
+<view class="search">
+    <view class="input-wrapper">
+        <view class="left">
+            <text class="iconfont icon-search"></text>
+            <text class="iconfont icon-delete delete" bind:tap="delete" wx:if="{{searchValue}}"></text>
+            <input type="text" value="{{searchValue}}" placeholder="搜索商品" bindinput="oninput" bindconfirm="onconfirm"/>
+        </view>
+        <text class="cancel" bind:tap="cancel">取消</text>
+    </view>
+    <view class="history-wrapper" wx:if="{{HistoryList.length>0}}">
+        <view class="title-wrapper">
+            <text class="left">历史搜索</text>
+            <text class="right iconfont icon-clear" bind:tap="clearHistoryList"></text>
+        </view>
+        <view class="tags-wrapper">
+            <block wx:for="{{HistoryList}}" wx:key="unqiue">
+                <view class="tag" data-value="{{item}}"  bind:tap="tagSearch">
+                    {{item}}
+                </view>
+            </block>
+        </view>
+    </view>
+    <view class="hot-wrods-wrapper">
+        <view class="title-wrapper">
+            <text class="left">热门搜索</text>
+        </view>
+        <view class="tags-wrapper">
+            <block wx:for="{{HotList}}" wx:key="unqiue">
+                <view class="tag {{item.highlight?'isHot':''}}" data-value="{{item.title}}"  bind:tap="tagSearch">
+                    {{item.title}}
+                </view>
+            </block>
+        </view>
+    </view>
+</view>

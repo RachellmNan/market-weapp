@@ -1,0 +1,244 @@
+@font-face {
+  font-family: 'iconfont';
+  /* project id 2250063 */
+  src: url("//at.alicdn.com/t/font_2250063_3t46ackmef9.eot");
+  src: url("//at.alicdn.com/t/font_2250063_3t46ackmef9.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_2250063_3t46ackmef9.woff2") format("woff2"), url("//at.alicdn.com/t/font_2250063_3t46ackmef9.woff") format("woff"), url("//at.alicdn.com/t/font_2250063_3t46ackmef9.ttf") format("truetype"), url("//at.alicdn.com/t/font_2250063_3t46ackmef9.svg#iconfont") format("svg");
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 32rpx;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-minus:before {
+  content: "\e620";
+}
+
+.icon-add:before {
+  content: "\e622";
+}
+
+.icon-cart:before {
+  content: "\e63f";
+}
+
+.icon-home:before {
+  content: "\e64f";
+}
+
+.icon-share:before {
+  content: "\e67d";
+}
+
+.icon-right:before {
+  content: "\e665";
+}
+
+.icon-search:before {
+  content: "\e67e";
+}
+
+.icon-clear:before {
+  content: "\e604";
+}
+
+.icon-delete:before {
+  content: "\e62f";
+  color: #333333;
+}
+
+.icon-about:before {
+  content: "\e6a1";
+}
+
+.icon-done:before {
+  content: "\e60c";
+  color: #157658;
+}
+
+.icon-waitingGet:before {
+  content: "\e637";
+  color: #157658;
+}
+
+.icon-waitingSend:before {
+  content: "\e640";
+  color: #157658;
+}
+
+.icon-waitingPay:before {
+  content: "\e69f";
+  color: #157658;
+}
+
+.icon-curpon:before {
+  content: "\e60f";
+  color: #157658;
+}
+
+.icon-order:before {
+  content: "\e719";
+  color: #157658;
+}
+
+.icon-address:before {
+  content: "\e71e";
+  color: #157658;
+}
+
+.icon-none:before {
+  content: "\e621";
+}
+
+page {
+  background-color: #F5F5F5;
+}
+
+.userinfo-wrapper {
+  background-color: #DCEBE6;
+  width: 100%;
+  height: 360rpx;
+  position: relative;
+}
+
+.userinfo-wrapper .top {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 40rpx;
+  left: 70rpx;
+  z-index: 10;
+}
+
+.userinfo-wrapper .top .login {
+  padding: 0;
+  width: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 50%;
+}
+
+.userinfo-wrapper .top .avatar {
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.userinfo-wrapper .top .name {
+  margin-left: 30rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.userinfo-wrapper .bottom {
+  position: absolute;
+  top: 60rpx;
+  bottom: 40rpx;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 690rpx;
+  height: 260rpx;
+  background-color: #fff;
+}
+
+.userinfo-wrapper .bottom .wrapper {
+  position: absolute;
+  bottom: 34rpx;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.userinfo-wrapper .bottom .wrapper view {
+  display: flex;
+  flex-direction: column;
+}
+
+.userinfo-wrapper .bottom .wrapper view text:first-child {
+  line-height: 44rpx;
+  height: 44rpx;
+  text-align: center;
+}
+
+.userinfo-wrapper .bottom .wrapper view text:nth-child(2) {
+  color: #999;
+  font-size: 24rpx;
+}
+
+.userinfo-wrapper .bottom .wrapper .couponsCount {
+  color: #157658;
+}
+
+.orders-wrapper {
+  background-color: #fff;
+  width: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+  height: 260rpx;
+}
+
+.orders-wrapper .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 0px 0px 8px 0px rgba(119, 163, 149, 0.2);
+}
+
+.orders-wrapper .container .title {
+  font-size: 24rpx;
+  color: #333;
+  margin-left: 30rpx;
+}
+
+.orders-wrapper .container .orders-status {
+  display: flex;
+  justify-content: space-around;
+}
+
+.orders-wrapper .container .orders-status view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.orders-wrapper .container .orders-status view .name {
+  font-size: 24rpx;
+  color: #666666;
+}
+
+.orders-wrapper .container .orders-status view .iconfont {
+  margin-bottom: 14rpx;
+  font-size: 40rpx;
+}
+
+.list-wrapper .flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx;
+  width: 100%;
+  height: 88rpx;
+  box-sizing: border-box;
+  margin-top: 2rpx;
+  background-color: #fff;
+}
+
+.list-wrapper .flex-box .list-left .name {
+  color: #333333;
+  font-size: 28rpx;
+  margin-left: 16rpx;
+}
+
+.list-wrapper .flex-box .icon-right {
+  height: 100%;
+  width: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

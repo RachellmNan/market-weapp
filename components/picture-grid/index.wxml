@@ -1,0 +1,10 @@
+<view class="product-list">
+    <view class="left">
+        <image  src="{{left.img}}"/>
+    </view>
+
+    <view class="right">
+        <image  src="{{rightTop.img}}"/>
+        <image  src="{{rightBottom.img}}"/>
+    </view>
+</view>

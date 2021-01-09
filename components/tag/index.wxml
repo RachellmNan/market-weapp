@@ -1,0 +1,4 @@
+<!--components/te/index.wxml-->
+<view class="tag">
+    <text class="title">{{title}}</text>
+</view>

@@ -1,0 +1,18 @@
+<view class="spu-preview">
+    <view class="image-wrapper">
+        <image src="{{data.img}}" />
+    </view>
+    <view class="title-wrapper">
+        {{data.title}}
+    </view>
+    <view wx:if="{{data.tags}}" class="tag-wrapper">
+        <l-tag bg-color="#DCEBE6" font-color="#157658" >{{data.tags}}</l-tag>
+    </view>
+    <view class="price-wrapper">
+        <text wx:if="{{data.discount_price}}" >￥{{data.discount_price}}</text>
+        <text class="{{data.discount_price ? 'disPrice':''}}">￥{{data.price}}</text>        
+    </view>
+    <view class="subtitle-wrapper">
+        {{data.subtitle}}
+    </view>
+</view>

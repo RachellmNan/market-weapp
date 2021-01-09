@@ -1,0 +1,182 @@
+@font-face {
+  font-family: 'iconfont';
+  /* project id 2250063 */
+  src: url("//at.alicdn.com/t/font_2250063_whe7984yg8.eot");
+  src: url("//at.alicdn.com/t/font_2250063_whe7984yg8.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_2250063_whe7984yg8.woff2") format("woff2"), url("//at.alicdn.com/t/font_2250063_whe7984yg8.woff") format("woff"), url("//at.alicdn.com/t/font_2250063_whe7984yg8.ttf") format("truetype"), url("//at.alicdn.com/t/font_2250063_whe7984yg8.svg#iconfont") format("svg");
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 32rpx;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-minus:before {
+  content: "\e620";
+}
+
+.icon-add:before {
+  content: "\e622";
+}
+
+.icon-cart:before {
+  content: "\e63f";
+}
+
+.icon-home:before {
+  content: "\e64f";
+}
+
+.icon-share:before {
+  content: "\e67d";
+}
+
+.icon-right:before {
+  content: "\e665";
+}
+
+.icon-search:before {
+  content: "\e67e";
+}
+
+page {
+  height: 100%;
+}
+
+.category {
+  display: flex;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.category .search-wrapper {
+  margin: 10rpx 20rpx;
+  background-color: #F1F1F1;
+  font-size: 24rpx;
+  color: #C4C9D2;
+  line-height: 60rpx;
+  height: 60rpx;
+  text-align: center;
+}
+
+.category .search-wrapper .search {
+  width: 100%;
+}
+
+.category .search-wrapper text {
+  margin-left: 6rpx;
+}
+
+.category .contain-wrapper {
+  display: flex;
+}
+
+.category .contain-wrapper .left {
+  width: 160rpx;
+}
+
+.category .contain-wrapper .left .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.category .contain-wrapper .left .container text {
+  width: 100%;
+  line-height: 30rpx;
+  padding: 30rpx 0;
+  text-align: center;
+  color: #333;
+  font-size: 28rpx;
+}
+
+.category .contain-wrapper .left .container .isSelect {
+  color: #157658;
+  position: relative;
+}
+
+.category .contain-wrapper .left .container .isSelect:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 8rpx;
+  transform: translateY(-50%);
+  height: 40rpx;
+  display: block;
+  background-color: #157658;
+}
+
+.category .contain-wrapper .left ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.category .contain-wrapper .right {
+  width: 100%;
+  height: 100%;
+}
+
+.category .contain-wrapper .right swiper {
+  height: 100%;
+}
+
+.category .contain-wrapper .right swiper .top {
+  margin: 24rpx 0 32rpx;
+  text-align: center;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category .contain-wrapper .right swiper .top text {
+  margin: 0 20rpx;
+  color: #333;
+}
+
+.category .contain-wrapper .right swiper .top:before {
+  content: '';
+  display: block;
+  width: 140rpx;
+  height: 1rpx;
+  border-top: 1rpx #C4C4C4 dotted;
+}
+
+.category .contain-wrapper .right swiper .top:after {
+  content: '';
+  display: block;
+  width: 140rpx;
+  height: 1rpx;
+  border-top: 1rpx #C4C4C4 dotted;
+}
+
+.category .contain-wrapper .right swiper .goods-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 30rpx;
+  margin: 0 4rpx;
+}
+
+.category .contain-wrapper .right swiper .goods-wrapper .goods-detail {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30rpx 40rpx;
+}
+
+.category .contain-wrapper .right swiper .goods-wrapper .goods-detail image {
+  width: 120rpx;
+  height: 120rpx;
+  margin-bottom: 12rpx;
+}
+
+.category .contain-wrapper .right swiper .goods-wrapper .goods-detail text {
+  text-align: center;
+  color: #333;
+  font-size: 20rpx;
+}

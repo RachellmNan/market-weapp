@@ -1,0 +1,24 @@
+.product-list{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 526rpx;
+    overflow: hidden;
+    .left{
+        width: 344rpx;
+        image{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .right{
+        width: 400rpx;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        image{
+            height: 260rpx;
+            width: 100%;
+        }
+    }
+}

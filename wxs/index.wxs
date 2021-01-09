@@ -1,0 +1,13 @@
+function filter(str,start,end){
+
+    return str.slice(start,end)
+}
+
+function price(nowPrice,disPrice){
+    if(!disPrice) return nowPrice
+    return Math.min(nowPrice,disPrice)
+}
+module.exports = {
+    filter:filter,
+    price:price
+}

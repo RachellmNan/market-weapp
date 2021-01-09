@@ -1,0 +1,5 @@
+<view class="operator-wrapper">
+    <text class="iconfont icon-minus" bind:tap="minus"></text>
+    <text class="count">{{count > min_count ? count:min_count}}</text>
+    <text class="iconfont icon-add" bind:tap="add" ></text>
+</view>

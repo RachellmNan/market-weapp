@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'iconfont';
+  /* project id 2250063 */
+  src: url("//at.alicdn.com/t/font_2250063_gbogsa416yd.eot");
+  src: url("//at.alicdn.com/t/font_2250063_gbogsa416yd.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_2250063_gbogsa416yd.woff2") format("woff2"), url("//at.alicdn.com/t/font_2250063_gbogsa416yd.woff") format("woff"), url("//at.alicdn.com/t/font_2250063_gbogsa416yd.ttf") format("truetype"), url("//at.alicdn.com/t/font_2250063_gbogsa416yd.svg#iconfont") format("svg");
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 32rpx;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-minus:before {
+  content: "\e620";
+}
+
+.icon-add:before {
+  content: "\e622";
+}
+
+.icon-cart:before {
+  content: "\e63f";
+}
+
+.icon-home:before {
+  content: "\e64f";
+}
+
+.icon-share:before {
+  content: "\e67d";
+}
+
+.icon-right:before {
+  content: "\e665";
+}
+
+.icon-search:before {
+  content: "\e67e";
+}
+
+.icon-clear:before {
+  content: "\e604";
+}
+
+.icon-delete:before {
+  content: "\e62f";
+  color: #333333;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 10rpx 30rpx 10rpx 20rpx;
+}
+
+.input-wrapper .left {
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #C4C9D2;
+  font-size: 24rpx;
+  position: relative;
+}
+
+.input-wrapper .left input {
+  background-color: #F1F1F1;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding-left: 56rpx;
+  width: 620rpx;
+  box-sizing: border-box;
+}
+
+.input-wrapper .left text:first-child {
+  position: absolute;
+  left: 20rpx;
+}
+
+.input-wrapper .left .delete {
+  position: absolute;
+  right: 0rpx;
+  top: 0;
+  width: 60rpx;
+  height: 100%;
+  z-index: 10;
+  text-align: center;
+}
+
+.input-wrapper .cancel {
+  font-size: 28rpx;
+  color: #333;
+  margin-left: 24rpx;
+}
+
+.history-wrapper {
+  margin-bottom: 80rpx;
+}
+
+.title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40rpx;
+  padding-right: 30rpx;
+}
+
+.title-wrapper .left {
+  font-size: 28rpx;
+  color: #333333;
+  display: flex;
+  align-items: center;
+}
+
+.title-wrapper .left:before {
+  content: '';
+  display: block;
+  width: 8rpx;
+  height: 40rpx;
+  background-color: #157658;
+  margin-right: 22rpx;
+}
+
+.tags-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 30rpx;
+}
+
+.tags-wrapper .tag {
+  margin-top: 20rpx;
+  background-color: #f3f3f3;
+  font-size: 24rpx;
+  color: #666;
+  padding: 0 20rpx;
+  line-height: 48rpx;
+  margin-right: 20rpx;
+}
+
+.tags-wrapper .isHot {
+  background-color: #DCEBE6;
+  color: #157658;
+}

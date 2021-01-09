@@ -1,0 +1,41 @@
+<view class="orders">
+    <view class="top">
+        <view class="all-tag {{currentIndex==0?'isSelected':''}}" data-index="0" bind:tap="chose">
+            <text >全部</text>
+        </view>
+        <view class="w-pay-tag {{currentIndex==1?'isSelected':''}}" data-index="1" bind:tap="chose">
+            <text >待付款</text>
+        </view>
+        <view class="w-send-tag {{currentIndex==2?'isSelected':''}}" data-index="2" bind:tap="chose">
+            <text >代发货</text>
+        </view>
+        <view class="w-get-tag {{currentIndex==3?'isSelected':''}}" data-index="3" bind:tap="chose">
+            <text >待收货</text>
+        </view>
+        <view class="done-tag {{currentIndex==4?'isSelected':''}}" data-index="4" bind:tap="chose">
+            <text >已完成</text>
+        </view>
+    </view>
+    <view class="content-wrapper">
+        <view class="all" wx:if="{{currentIndex==0}}">
+            <text class="iconfont icon-none"></text>
+            <text >暂无相关订单</text>
+        </view>
+        <view class="w-pay" wx:if="{{currentIndex==1}}">
+            <text class="iconfont icon-none"></text>
+            <text >暂无相关订单</text>
+        </view>
+        <view class="w-send" wx:if="{{currentIndex==2}}">
+            <text class="iconfont icon-none"></text>
+            <text >暂无相关订单</text>
+        </view>
+        <view class="w-get" wx:if="{{currentIndex==3}}">
+            <text class="iconfont icon-none"></text>
+            <text >暂无相关订单</text>
+        </view>
+        <view class="done" wx:if="{{currentIndex==4}}">
+            <text class="iconfont icon-none"></text>
+            <text >暂无相关订单</text>
+        </view>
+    </view>
+</view>

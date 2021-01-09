@@ -1,0 +1,152 @@
+@import "../../style/iconfont.wxss";
+page{
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+}
+.detail{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    .img-wrapper{
+        swiper{
+            height: 680rpx;
+            image{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .goods-introduce{
+        width: 100%;
+        background-color: #fff;
+        margin-bottom: 20rpx;
+        .top{
+            display: flex;
+            padding: 24rpx 30rpx 0 30rpx;
+            justify-content: space-between;
+            .left{
+                width: 560rpx;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                text{
+                    &:nth-child(1){
+                        color: #333333;
+                        font-size: 32rpx;
+                    }
+                    &:nth-child(2){
+                        margin-top: 18rpx;
+                        color: #999999;
+                        font-size: 28rpx;
+                    }
+                }
+            }
+            .right{
+                button{
+                    text-align: center;
+                    background-color: #DCEBE6;
+                    width: 40rpx !important;
+                    padding: 10rpx 0;
+                    height: 120rpx;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    text{
+                        width: 20rpx;
+                        height: 20rpx;
+                        font-size: 25rpx;
+                    }
+                }
+            }
+        }
+        .tags-wrapper{
+            font-size: 20rpx;
+            color: #157658;
+            padding-left: 30rpx;
+            text{
+                background-color: #DCEBE6;
+                margin-right: 12rpx;
+                padding: 4rpx 6rpx;
+            }
+        }
+        .price-wrapper{
+            padding-left: 30rpx;
+            padding-top: 4rpx;
+            padding-bottom: 4rpx;
+            text{
+                font-size: 24rpx;
+                &:first-child{
+                    color: #157658;
+                    margin-right: 20rpx;
+                    font-size: 30rpx;
+                }
+                &:nth-child(2){
+                    color: #999999;
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+    .coupon{
+        display: flex;
+        padding: 20rpx 30rpx;
+        margin-bottom: 20rpx;
+        background-color: #fff;
+        justify-content: space-between;
+        align-items: center;
+        .coupon-list{
+            display: flex;
+            font-size: 20rpx;
+            align-items: center;
+            line-height: 48rpx;
+            color: #157658;
+            view{
+                background-color: #DCEBE6;
+                margin-right: 20rpx;
+                padding: 14rpx 28rpx;
+            }
+        }
+        .more{
+            font-size: 28rpx;
+            color: #333333;
+        }
+    }
+    .explain-wrapper{
+        background-color: #fff  ;
+        margin-bottom: 20rpx;
+        view{
+            margin: 0 30rpx;
+            height: 80rpx;
+            line-height: 80rpx;
+            color: #333333;
+            font-size: 28rpx;
+            border-bottom: 1rpx solid #DCEBE6;
+        }
+        view{
+            &:last-child{
+                border-bottom: none;
+            }
+        }
+    }
+    .img-detail{
+        image{
+            width: 100%;
+        }
+    }
+    .mask{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        opacity: 0.5;
+        background-color: #000;
+    }
+    .tab{
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+}

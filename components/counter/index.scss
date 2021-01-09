@@ -1,0 +1,20 @@
+@import "../../style/iconfont.wxss";
+.operator-wrapper{
+    display: flex;
+    font-size: 30rpx;
+    align-items: center;
+    border: 1rpx solid #DCEBE6;
+    text{
+        line-height:48rpx;
+        min-width:  50rpx;
+        text-align: center;
+    }
+    .count{
+        font-size: 24rpx;
+        min-width: 64rpx;
+        margin: 0 16rpx;
+    }
+    .iconfont{
+        background-color: #DCEBE6;
+    }
+}

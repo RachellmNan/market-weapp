@@ -1,0 +1,33 @@
+<view class="category">
+    <view class="search-wrapper">
+        <view class="search" bind:tap="goSearch">
+            <text class="iconfont icon-search">搜索商品</text>
+        </view>
+    </view>
+    <view class="contain-wrapper">
+        <view class="left">
+            <scroll-view scroll-y >
+                <view class="container" style="height:{{ViewHeight}}rpx">
+                    <block wx:for="{{roots}}" wx:key="unique">
+                        <text class="{{currentIndex == index?'isSelect':''}}" bind:tap="choseRoot" data-index="{{index}}">{{item.name}}</text>
+                    </block>
+                </view>
+            </scroll-view>
+        </view>
+        <view class="right">
+            <swiper vertical current="{{currentIndex<=6?currentIndex:6}}" duration="200">
+                <swiper-item wx:for="{{subs}}" wx:for-item="sub" wx:key="unique">
+                    <view class="top">
+                        <text >全部分类</text>
+                    </view>
+                    <view class="goods-wrapper">
+                        <view class="goods-detail" wx:for="{{sub}}" wx:key="unqiue">
+                            <image  src="{{item.img}}"/>
+                            <text >{{item.name}}</text>
+                        </view>
+                    </view>
+                </swiper-item>
+            </swiper>
+        </view>
+    </view>
+</view>

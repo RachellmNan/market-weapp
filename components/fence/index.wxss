@@ -1,0 +1,18 @@
+.fence {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rpx;
+}
+
+.fence .title {
+  margin-top: 34rpx;
+  margin-bottom: 26rpx;
+  color: #555555;
+  font-size: 24rpx;
+  line-height: 24rpx;
+}
+
+.fence .tags {
+  display: flex;
+  border-bottom: 2rpx #E9E9E9 solid;
+}

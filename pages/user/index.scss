@@ -1,0 +1,137 @@
+@import "../../style/iconfont.wxss";
+page{
+    background-color: #F5F5F5;
+}
+.userinfo-wrapper{
+    background-color: #DCEBE6;
+    width: 100%;
+    height: 360rpx;
+    position: relative;
+    .top{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 40rpx;
+        left: 70rpx;
+        z-index: 10;
+        .login{
+            padding: 0;
+            width: 100rpx;
+            height: 100rpx;
+            line-height: 100rpx;
+            border-radius: 50%;
+        }
+        .avatar{
+            width: 140rpx;
+            height: 140rpx;
+        }
+        .name{
+            margin-left: 30rpx;
+            font-size: 28rpx;
+            color: #333;
+        }
+    }
+    .bottom{
+        position: absolute;
+        top: 60rpx;
+        bottom: 40rpx;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 690rpx;
+        height: 260rpx;
+        background-color: #fff;
+        .wrapper{
+            position: absolute;
+            bottom: 34rpx;
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            view{
+                display: flex;
+                flex-direction: column;
+                text:first-child{
+                    line-height: 44rpx;
+                    height: 44rpx;
+                    text-align: center;
+                }
+                text{
+                    &:nth-child(2){
+                        color: #999;
+                        font-size: 24rpx;
+                    }
+                }
+            }
+            .couponsCount{
+                color: #157658;
+            }
+        }
+    }
+}
+.orders-wrapper{
+    background-color: #fff;
+    width: 100%;
+    padding: 30rpx;
+    box-sizing: border-box;
+    height: 260rpx;
+    
+    .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        box-shadow: 0px 0px 8px 0px rgba(119, 163, 149, 0.2);
+        .title{
+            font-size: 24rpx;
+            color: #333;
+            margin-left: 30rpx;
+        }
+        .orders-status{
+            display: flex;
+            justify-content: space-around;
+            view{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .name{
+                    font-size: 24rpx;
+                    color: #666666;
+                }
+                .iconfont{
+                    margin-bottom: 14rpx;
+                    font-size: 40rpx;
+                }
+            }
+        }
+    }
+}
+.list-wrapper{
+    
+    .flex-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30rpx;
+        width: 100%;
+        height: 88rpx;
+        box-sizing: border-box;
+        margin-top: 2rpx;
+        background-color: #fff;
+        .list-left{
+            .name{
+                color: #333333;
+                font-size: 28rpx;
+                margin-left: 16rpx;
+            }
+        }
+        .icon-right{
+            height: 100%;
+            width: 50rpx;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}

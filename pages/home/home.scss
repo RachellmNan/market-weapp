@@ -1,0 +1,123 @@
+page {
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+}
+.home {
+    width: 100%;
+    height: 100%;
+    .home-banner {
+        width: 100%;
+        height: 260rpx;
+        image {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .swiper-wrapper {
+        width: 100%;
+        height: 360rpx;
+        .swiper-list {
+            height: 100%;
+            image {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .coupon-banner {
+        width: 100%;
+        height: 300rpx;
+        margin-top: 20rpx;
+        margin-bottom: 20rpx;
+        image {
+            width: 100%;
+            height: 300rpx;
+        }
+    }
+    .week_news {
+        margin-bottom: 20rpx;
+        background-color: #fff;
+        padding-bottom: 32rpx;
+        .top-wrapper {
+            padding: 44rpx 30rpx 28rpx;
+            height: 88rpx;
+            image {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .list-wrapper {
+            display: flex;
+            margin-left: 30rpx;
+            .item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-right: 60rpx;
+                image {
+                    width: 160rpx;
+                    height: 160rpx;
+                    margin-bottom: 14rpx;
+                }
+                .title {
+                    font-size: 20rpx;
+                    color: #999;
+                    margin-bottom: 10rpx;
+                }
+                .price {
+                    color: #157658;
+                    font-size: 28rpx;
+                    line-height: 28rpx;
+                }
+            }
+        }
+    }
+    .handpick{
+        display: flex;
+        image{
+            width: 100%;
+            height: 880rpx;
+        }
+    }
+    .hot-wrapper{
+        margin-top: 20rpx;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        .top{
+            padding: 44rpx 30rpx 28rpx;
+            image{
+                width: 100%;
+                height: 88rpx;
+            }
+        }
+    }
+    .fashion-wrapper{
+        width: 100%;
+        margin-top: 20rpx;
+        display: flex;
+        image{
+            width: 100%;
+            height: 840rpx;
+        }
+    }
+    .recommend-wrapper{
+        margin-top: 20rpx;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        // 
+        .top{
+            margin: 36rpx 30rpx 38rpx;
+            image{
+                width: 100%;
+                height: 68rpx;
+            }
+        }
+        .tip{
+            text-align: center;
+            margin: 20rpx;
+        }
+    }
+}

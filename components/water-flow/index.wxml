@@ -1,0 +1,44 @@
+<view class="water-flow">
+    <view class="list-wrapper" >
+        <ul class="list">
+            <li class="list-item" bind:tap="onItemTap" data-pid="{{item.id}}" wx:for="{{data}}" wx:key="unique" wx:if="{{index%2==0}}">
+                <view class="image-wrapper">
+                    <image mode="widthFix" src="{{item.img}}"/>
+                </view>
+                <view class="title-wrapper">
+                    <text>{{item.title}}</text>
+                </view>
+                <view class="tag-wrapper" wx:if="{{item.tags}}">
+                    <m-tag title="{{item.tags}}"/>
+                </view>
+                <view class="price-wrapper">
+                    <text wx:if="{{item.discount_price}}" >￥{{item.discount_price}}</text>
+                    <text class="{{item.discount_price ? 'disPrice':''}}">￥{{item.price}}</text>  
+                </view>
+                <view class="subtitle-wrapper">
+                    <text>{{item.subtitle}}</text>
+                </view>
+            </li>
+        </ul>
+        <ul class="list">
+            <li class="list-item" bind:tap="onItemTap" data-pid="{{item.id}}" wx:for="{{data}}" wx:key="unique" wx:if="{{index%2!=0}}">
+                <view class="image-wrapper">
+                    <image  mode="widthFix" src="{{item.img}}"/>
+                </view>
+                <view class="title-wrapper">
+                    <text>{{item.title}}</text>
+                </view>
+                <view class="tag-wrapper" wx:if="{{item.tags}}">
+                    <m-tag title="{{item.tags}}"/>
+                </view>
+                <view class="price-wrapper">
+                    <text wx:if="{{item.discount_price}}" >￥{{item.discount_price}}</text>
+                    <text class="{{item.discount_price ? 'disPrice':''}}">￥{{item.price}}</text>  
+                </view>
+                <view class="subtitle-wrapper">
+                    <text>{{item.subtitle}}</text>
+                </view>
+            </li>
+        </ul>
+    </view>
+</view>

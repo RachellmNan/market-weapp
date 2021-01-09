@@ -1,0 +1,25 @@
+<view  bind:tap="onTap" class="cell {{util.statusStyle(cell.status).outer}}">
+    <view class="{{util.statusStyle(cell.status).inner}}">
+        <image mode="aspectFit" src="{{cell.skuImg}}" wx:if="{{cell.skuImg}}" class="fetchImg"/>
+        <text class="waiting">{{cell.title}}</text>
+    </view>
+</view>
+
+<wxs module="util">
+    function statusStyle(status){
+        if(status == 'forbidden'){
+            return {
+                outer:'forbidden',
+                inner:''
+            }
+        }else if(status == 'selected'){
+            return {
+                outer:'s-outer',
+                inner:'s-inner'
+            }
+        }
+    }
+    module.exports = {
+        statusStyle:statusStyle
+    }
+</wxs>

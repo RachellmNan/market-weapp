@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "m-category-grid":"/components/category-grid/index",
+    "m-picture-grid":"/components/picture-grid/index",
+    "m-spu-preview":"/components/spu-preview/index",
+    "m-water-flow":"/components/water-flow/index"
+  },
+  "backgroundColor":"#ff6700",
+  "navigationBarTitleText":"商城"
+}

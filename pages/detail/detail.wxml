@@ -1,0 +1,63 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail">
+    <scroll-view scroll-y>
+        <view class="s-container" style="height:{{Height}}rpx">
+            <view class="img-wrapper">
+                <swiper circular>
+                    <swiper-item  wx:for="{{SwiperImgList}}" wx:key="unqiue">
+                        <image src="{{item.img}}"/>
+                    </swiper-item>
+                </swiper>
+            </view>
+            <view class="goods-introduce">
+                <view class="top">
+                    <view class="left">
+                        <text >{{title}}</text>
+                        <text >{{subtitle}}</text>
+                    </view>
+                    <view class="right">
+                        <button >
+                            <text class="iconfont icon-share"></text>
+                            <text >分</text>
+                            <text >享</text>
+                        </button>
+                    </view>
+                </view>
+                <view class="tags-wrapper" wx:if="{{tags}}">
+                    <block wx:for="{{tags}}" wx:key="unique">
+                        <text >{{item}}</text>
+                    </block>
+                </view>
+                <view class="price-wrapper">
+                    <text >￥{{price}}</text>
+                    <text >￥{{disPrice}}</text>
+                </view>
+            </view>
+            <view class="coupon">
+                <view class="coupon-list">
+                    <view class="item">满999减100元券</view>
+                    <view class="item">满1699减200元券</view>
+                </view>
+                <view class="more">
+                    <text >立即领取</text>
+                    <text class="iconfont icon-right"></text>
+                </view>
+            </view>
+            <view class="explain-wrapper">
+                <block wx:for="{{explainList}}" wx:key="unqiue">
+                    <view >{{item.text}}</view>
+                </block>
+            </view>
+            <view class="img-detail">
+                <block wx:for="{{imgList}}" wx:key="unqiue">
+                    <image src="{{item.img}}" />
+                </block>
+            </view>
+        </view>
+    </scroll-view>
+        
+    <view wx:if="{{showRealm}}" class="mask"></view>
+    <m-realm wx:if="{{showRealm}}" spu="{{Spus}}" bind:closeRealm="closeRealm"/>
+    <m-tab class="tab" bind:add="add" bind:buy="buy" />
+</view>
+

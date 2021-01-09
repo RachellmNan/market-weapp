@@ -1,0 +1,206 @@
+@font-face {
+  font-family: 'iconfont';
+  /* project id 2250063 */
+  src: url("//at.alicdn.com/t/font_2250063_p4oeh1mo97.eot");
+  src: url("//at.alicdn.com/t/font_2250063_p4oeh1mo97.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_2250063_p4oeh1mo97.woff2") format("woff2"), url("//at.alicdn.com/t/font_2250063_p4oeh1mo97.woff") format("woff"), url("//at.alicdn.com/t/font_2250063_p4oeh1mo97.ttf") format("truetype"), url("//at.alicdn.com/t/font_2250063_p4oeh1mo97.svg#iconfont") format("svg");
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 32rpx;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-minus:before {
+  content: "\e620";
+}
+
+.icon-add:before {
+  content: "\e622";
+}
+
+.icon-cart:before {
+  content: "\e63f";
+}
+
+.icon-home:before {
+  content: "\e64f";
+}
+
+.icon-share:before {
+  content: "\e67d";
+}
+
+.icon-right:before {
+  content: "\e665";
+}
+
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+.detail {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.detail .img-wrapper swiper {
+  height: 680rpx;
+}
+
+.detail .img-wrapper swiper image {
+  width: 100%;
+  height: 100%;
+}
+
+.detail .goods-introduce {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+
+.detail .goods-introduce .top {
+  display: flex;
+  padding: 24rpx 30rpx 0 30rpx;
+  justify-content: space-between;
+}
+
+.detail .goods-introduce .top .left {
+  width: 560rpx;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.detail .goods-introduce .top .left text:nth-child(1) {
+  color: #333333;
+  font-size: 32rpx;
+}
+
+.detail .goods-introduce .top .left text:nth-child(2) {
+  margin-top: 18rpx;
+  color: #999999;
+  font-size: 28rpx;
+}
+
+.detail .goods-introduce .top .right button {
+  text-align: center;
+  background-color: #DCEBE6;
+  width: 40rpx !important;
+  padding: 10rpx 0;
+  height: 120rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.detail .goods-introduce .top .right button text {
+  width: 20rpx;
+  height: 20rpx;
+  font-size: 25rpx;
+}
+
+.detail .goods-introduce .tags-wrapper {
+  font-size: 20rpx;
+  color: #157658;
+  padding-left: 30rpx;
+}
+
+.detail .goods-introduce .tags-wrapper text {
+  background-color: #DCEBE6;
+  margin-right: 12rpx;
+  padding: 4rpx 6rpx;
+}
+
+.detail .goods-introduce .price-wrapper {
+  padding-left: 30rpx;
+  padding-top: 4rpx;
+  padding-bottom: 4rpx;
+}
+
+.detail .goods-introduce .price-wrapper text {
+  font-size: 24rpx;
+}
+
+.detail .goods-introduce .price-wrapper text:first-child {
+  color: #157658;
+  margin-right: 20rpx;
+  font-size: 30rpx;
+}
+
+.detail .goods-introduce .price-wrapper text:nth-child(2) {
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.detail .coupon {
+  display: flex;
+  padding: 20rpx 30rpx;
+  margin-bottom: 20rpx;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail .coupon .coupon-list {
+  display: flex;
+  font-size: 20rpx;
+  align-items: center;
+  line-height: 48rpx;
+  color: #157658;
+}
+
+.detail .coupon .coupon-list view {
+  background-color: #DCEBE6;
+  margin-right: 20rpx;
+  padding: 14rpx 28rpx;
+}
+
+.detail .coupon .more {
+  font-size: 28rpx;
+  color: #333333;
+}
+
+.detail .explain-wrapper {
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+
+.detail .explain-wrapper view {
+  margin: 0 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #333333;
+  font-size: 28rpx;
+  border-bottom: 1rpx solid #DCEBE6;
+}
+
+.detail .explain-wrapper view:last-child {
+  border-bottom: none;
+}
+
+.detail .img-detail image {
+  width: 100%;
+}
+
+.detail .mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 0.5;
+  background-color: #000;
+}
+
+.detail .tab {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}

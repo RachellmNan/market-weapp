@@ -1,0 +1,10 @@
+<view class="fence">
+    <view class="title">
+        {{title}}
+    </view>
+    <view class="tags">
+        <view wx:for="{{fence.cells}}" wx:key="unique">
+            <m-cell x="{{x}}" y="{{index}}" cell="{{item}}"/>
+        </view> 
+    </view>
+</view>

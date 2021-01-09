@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  height: 320rpx;
+  padding: 10rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.container .grid-wrapper {
+  height: 300rpx;
+  width: 100%;
+  border: 1rpx dashed #dcebe6;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.container .grid-wrapper l-grid-item {
+  flex: 1;
+}
+
+.container .grid-wrapper l-grid-item .item-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .grid-wrapper l-grid-item .item-detail image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.container .grid-wrapper l-grid-item .item-detail text {
+  margin-top: 6rpx;
+  width: 42rpx;
+  height: 24rpx;
+  font-size: 20rpx;
+}

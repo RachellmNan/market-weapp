@@ -1,0 +1,91 @@
+@import "../../style/iconfont.wxss";
+.realm{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    flex-direction: column;
+    background-color: #fff;
+    .wrapper{
+        height: 724rpx;
+        display: flex;
+        flex-direction: column;
+    }
+    .product-detail{
+        margin: 30rpx 30rpx 12rpx 30rpx;
+        display: flex;
+        image{
+            width: 160rpx;
+            height: 160rpx;
+            margin-right: 40rpx;
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .right-bottom{
+                display: flex;
+                flex-direction: column;
+                text{
+                    &:first-child{
+                        color: #157658;
+                        font-size: 28rpx;
+                        line-height: 34rpx;
+                        margin-right: 20rpx;
+                    }
+                    &:nth-child(2),&+text{
+                        color: #999999;
+                        font-size: 20rpx;
+                        line-height: 24rpx;
+                        margin-right: 30rpx;
+                    }
+                    .disprice{
+                        text-decoration: line-through;
+                    }
+                }
+                .tips{
+                    text{
+                        font-size: 20rpx;
+                        color: #999;
+                    }
+                }
+            }
+        }
+    }
+    .controller{
+        display: flex;
+        margin-left: 30rpx;
+        margin-right: 30rpx;
+        height: 108rpx;
+        align-items: center;
+        justify-content: space-between;
+        .tip{
+            color: #555555;
+            font-size: 24rpx;
+        }
+        
+    }
+    .bottom-controller{
+        height: 100rpx;
+        display: flex;
+        line-height: 100rpx;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 32rpx;
+        .add{
+            flex: 1;
+            background-color: #333;
+        }
+        .buy{
+            flex: 1;
+            background-color: #157658;
+        }
+        .lack{
+            flex: 1;
+            color: palevioletred;
+            background-color: #E9E9E9;
+        }
+    }
+}

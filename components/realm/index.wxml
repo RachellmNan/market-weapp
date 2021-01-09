@@ -1,0 +1,51 @@
+<!--components/realm/index.wxml-->
+<view class="realm">
+    <scroll-view scroll-y>
+        <view class="wrapper">
+            <view class="product-detail">
+                <image  src="{{previewImg}}"/>
+                <view class="right">
+                    <view class="right-top">
+                        <text class="goods-name">{{title}}</text>
+                    </view>
+                    <view class="right-bottom">
+                        <view class="info-detail">
+                            <text >￥ {{price}}</text>
+                            <text wx:if="{{discount_price}}" class="disprice">￥{{discount_price}}</text>
+                            <text wx:if="{{stock && stock>=10}}">库存：{{stock}}件</text>
+                            <text wx:if="{{stock && stock<10 && stock!=0}}">仅剩{{stock}}件</text>
+                            <text wx:if="{{stock==0}}">无货</text>
+                        </view>
+                        <view wx:if="{{!noSpec}}" class="tips" >
+                            <text wx:if="{{!skuIntact}}">请选择</text>
+                            <text wx:if="{{skuIntact}}">已选</text>
+                            <text wx:if="{{!skuIntact}}" wx:for="{{missingKeys}}" wx:key="index">{{item}}</text>
+                            <text wx:if="{{skuIntact}}">{{currentValues}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <block wx:for="{{fences}}" wx:key="unqiue">
+                <m-fence x="{{index}}" bind:celltap="onCellTap" title="{{item.title}}" fence="{{item}}"/>
+            </block>
+            <block wx:for="{{fences}}" wx:key="unqiue">
+                <m-fence x="{{index}}" bind:celltap="onCellTap" title="{{item.title}}" fence="{{item}}"/>
+            </block>
+        </view>
+    </scroll-view>
+    <view class="controller">
+        <text class="tip">购买数量</text>
+        <m-counter count="2" bind:stockStatus="getPurchaseStatus"/>
+    </view>
+    <view class="bottom-controller">
+        <view class="add" bind:tap="addCart">
+            加入购物车
+        </view>
+        <view wx:if="{{!OverStocks}}" class="buy" bind:tap="buy">
+            立即购买
+        </view>
+        <view wx:if="{{OverStocks}}" class="lack">
+            暂时缺货
+        </view>
+    </view>
+</view>

@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'iconfont';
+  /* project id 2250063 */
+  src: url("//at.alicdn.com/t/font_2250063_p4oeh1mo97.eot");
+  src: url("//at.alicdn.com/t/font_2250063_p4oeh1mo97.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_2250063_p4oeh1mo97.woff2") format("woff2"), url("//at.alicdn.com/t/font_2250063_p4oeh1mo97.woff") format("woff"), url("//at.alicdn.com/t/font_2250063_p4oeh1mo97.ttf") format("truetype"), url("//at.alicdn.com/t/font_2250063_p4oeh1mo97.svg#iconfont") format("svg");
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 32rpx;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-minus:before {
+  content: "\e620";
+}
+
+.icon-add:before {
+  content: "\e622";
+}
+
+.icon-cart:before {
+  content: "\e63f";
+}
+
+.icon-home:before {
+  content: "\e64f";
+}
+
+.icon-share:before {
+  content: "\e67d";
+}
+
+.icon-right:before {
+  content: "\e665";
+}
+
+.realm {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.realm .wrapper {
+  height: 724rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.realm .product-detail {
+  margin: 30rpx 30rpx 12rpx 30rpx;
+  display: flex;
+}
+
+.realm .product-detail image {
+  width: 160rpx;
+  height: 160rpx;
+  margin-right: 40rpx;
+}
+
+.realm .product-detail .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.realm .product-detail .right .right-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.realm .product-detail .right .right-bottom text:first-child {
+  color: #157658;
+  font-size: 28rpx;
+  line-height: 34rpx;
+  margin-right: 20rpx;
+}
+
+.realm .product-detail .right .right-bottom text:nth-child(2), .realm .product-detail .right .right-bottom text + text {
+  color: #999999;
+  font-size: 20rpx;
+  line-height: 24rpx;
+  margin-right: 30rpx;
+}
+
+.realm .product-detail .right .right-bottom text .disprice {
+  text-decoration: line-through;
+}
+
+.realm .product-detail .right .right-bottom .tips text {
+  font-size: 20rpx;
+  color: #999;
+}
+
+.realm .controller {
+  display: flex;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  height: 108rpx;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.realm .controller .tip {
+  color: #555555;
+  font-size: 24rpx;
+}
+
+.realm .bottom-controller {
+  height: 100rpx;
+  display: flex;
+  line-height: 100rpx;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 32rpx;
+}
+
+.realm .bottom-controller .add {
+  flex: 1;
+  background-color: #333;
+}
+
+.realm .bottom-controller .buy {
+  flex: 1;
+  background-color: #157658;
+}
+
+.realm .bottom-controller .lack {
+  flex: 1;
+  color: palevioletred;
+  background-color: #E9E9E9;
+}

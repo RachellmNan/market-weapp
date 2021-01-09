@@ -1,0 +1,21 @@
+<view class="tab">
+    <view class="operator-wrapper">
+        <view class="home">
+            <text class="iconfont icon-home"></text>
+            <text class="title">首页</text>
+        </view>
+        <view class="cart">
+            <text class="iconfont icon-cart"></text>
+            <text class="title">购物车</text>
+            <text class="count">{{count}}</text>
+        </view>
+    </view>
+    <view class="buy-wrapper">
+        <view class="add" bind:tap="add">
+            加入购物车
+        </view>
+        <view class="buy" bind:tap="buy">
+            立即购买
+        </view>
+    </view>
+</view>

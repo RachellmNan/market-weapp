@@ -1,0 +1,67 @@
+<view class="user">
+    <view class="userinfo-wrapper">
+        <view class="top">
+            <open-data wx:if="{{loginStatus}}" type="userAvatarUrl" class="avatar"/>
+            <button wx:if="{{!loginStatus}}" class="login" open-type="getUserInfo" bindgetuserinfo="login">登录</button>
+            <open-data wx:if="{{loginStatus}}" type="userNickName" class="name"/>
+        </view>
+        <view class="bottom">
+            <view class="wrapper">
+                <view class="coupons">
+                    <text class="couponsCount">3</text>
+                    <text >优惠券</text>
+                </view>
+                <view class="contract">
+                    <text class="iconfont icon-about"></text>
+                    <text >关于我们</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="orders-wrapper">
+        <view class="container">
+            <view class="title">我的订单</view>
+            <view class="orders-status">
+                <view class="waiting-pay" data-index="1" bind:tap="goOrder">
+                    <text class="iconfont icon-waitingPay" ></text>
+                    <text class="name">待支付</text>
+                </view>
+                <view class="waiting-send" data-index="2" bind:tap="goOrder">
+                    <text class="iconfont icon-waitingSend"></text>
+                    <text class="name">代发货</text>
+                </view>
+                <view class="waiting-get" data-index="3"  bind:tap="goOrder">
+                    <text class="iconfont  icon-waitingGet"></text>
+                    <text class="name">待收货</text>
+                </view>
+                <view class="all" data-index="4" bind:tap="goOrder">
+                    <text class="iconfont icon-done"></text>
+                    <text class="name">已完成</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="list-wrapper">
+        <view class="allOrders-item flex-box" data-index="0" bind:tap="goOrder">
+            <view class="list-left">
+                <text class="iconfont icon-order"></text>
+                <text class="name">全部订单</text>
+            </view>
+            <text class="iconfont icon-right"></text>
+        </view>
+        <view class="coupons-item flex-box">
+            <view class="list-left">
+                <text class="iconfont icon-curpon"></text>
+                <text class="name">优惠券</text>
+            </view>
+            <text class="iconfont icon-right"></text>
+        </view>
+        <view class="address-item flex-box">
+            <view class="list-left">
+                <text class="iconfont icon-address"></text>
+                <text class="name">收货地址</text>
+            </view>
+            <text class="iconfont icon-right"></text>
+        </view>
+    </view>
+</view>
